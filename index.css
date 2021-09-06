@@ -12,7 +12,7 @@
     --icone-background: #DEEBFF;
     --margin-side: 20px;
     --side-margin: 50px;
-    --activity-card-size: 300px;
+    --activity-card-size: 335px;
     --hosting-card-size: 235px;
     --card-border-radius: 25px;
 }
@@ -251,9 +251,11 @@ p{
     padding: 40px 20px 35px 20px;
 }
 .popular_wrapper {
-   width: 335px; 
+   width: 50%;
+   min-width: 335px; 
    margin: 0 auto;
 }
+
 .popular_container .popular_header {
     margin-left: auto;
     display: flex;
@@ -263,7 +265,7 @@ p{
 }
 .popular_card {
     width: 100%;
-    max-width: 335px;
+    min-width: 335px;
     box-shadow: 0px 1px 10px  lightgray;
     border: 5px solid #FFF;
     border-radius: 25px;
@@ -300,7 +302,13 @@ p{
 
 
 /*--------------------MEDIA QUERIES---------------------*/
-
+@media screen and (max-width:550px) {
+    .card_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 @media screen and (min-width:550px) {
     .hotel {
         margin: 0 2%;
@@ -344,6 +352,12 @@ p{
     }
     .switch_choice {
         display: none;
+    }
+}
+@media screen and (max-width:1000px) {
+    .hosting_container .hosting_card {
+        width: 50%;
+        min-width: 325px;
     }
 }
 @media screen and (min-width: 1000px) {
@@ -402,30 +416,19 @@ p{
 
 
 
-
+.activity {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 
 
 .activity_wrapper {
-    display: flex;
-    justify-content: center;
+    margin: 0 50px;
 }
 
-.activity > article {
-    background-color: #ccc;
-    border-radius: 25px;
-    width: 300px;
-    height: 200px;
-}
-.activity {
-    max-width: 1340px;
-    width: 100%;
-    margin: 0 auto;    
-    display: grid;
-    grid-column-gap: 40px;
-    grid-template-columns: repeat(auto-fill, 300px);
-    justify-content: center;
-}
+
 
 .activity img {
     height: 135px;
@@ -437,20 +440,30 @@ p{
 }
 .activity h4 {
     height: 60px;
-    margin-top: -5px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: #FFF;
     margin-top: -5px;
+    margin-bottom: 25px;
     padding: 20px;
-
+    box-shadow: 0px 1px 10px  lightgray;
 }
 
 
 
 
 @media screen and (min-width: 1275px) {
+    :root {
+        --activity-card-size: 300px;
+    }
     .activity {
+        max-width: 1340px;
+        width: 100%;
+        margin: 0 auto;    
+        display: grid;
+        grid-column-gap: 45px;
+        grid-template-columns: repeat(auto-fill, 300px);
+        justify-content: center;
         grid-template-rows: 195px repeat(2, 45px) 165px;
     }
 
@@ -497,16 +510,13 @@ p{
         height: 150px;
         }
 }
-@media screen and (max-width:1275px){
+@media screen and (max-width:1400px) {
     .activity {
-        grid-row-gap: 20px;
+        grid-column-gap: 15px ;
     }
 }
-@media screen and (min-width: 300px) and (max-width: 1350px){
-    .activity {
-        grid-column-gap: 25px ;
-    }
-}
+
+
 
 
 
@@ -514,12 +524,12 @@ p{
 @media screen and (max-width: 750px) {
     :root {
         --side-margin: 20px;
-        --activity-card-size: 335px;
         --hosting-card-size: 325px;
     }
     .activity {
         display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
         align-items: center;
         width: auto;
     }
