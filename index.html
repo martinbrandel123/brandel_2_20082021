@@ -8,24 +8,17 @@
     <title>Document</title>
 </head>
 <body>
+
     <header class="header">
-        <a href="#"><img src="img/logo/logo_reservia.png" alt="logo du site"></a>
-        <nav>
-            <ul>
-                <li class="active"><a href="">Hébergements</a></li>
-                <li><a href="">Activités</a></li>
-                <li class="special"><a href="">S'inscrire</a></li>
-            </ul>
+        <a class="header_img" href="#"><img src="img/logo/logo_reservia.png" alt="logo du site"></a>
+        <nav> 
+            <a class="active" href="#hosting"><h3>Hébergements</h3></a>
+            <a href="#activity"><h3>Activités</h3></a>
         </nav>
+        <a class="suscribe" href="">S'inscrire</a>
     </header>
-        <section class="switch_choice">
-            <a href="#">
-                <h5 class="switch_active">Hébergements</h5>
-            </a>
-            <a href="#">
-                <h5>Activités</h5>
-            </a>
-        </section>    
+
+
     <section class="section_1">
         <div class="section_text">
             <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
@@ -34,7 +27,7 @@
         <section class="form_city">
                 <div><i class="fas fa-star"></i></div>
                 <input type="text">
-                <button><i class="fas fa-star"></i><span class="active">Rechercher</span></button>
+                <button><span class="form_icone"><i class="fas fa-star"></i></span><span class="form_search">Rechercher</span></button>
         </section>
         <section class="filter">
             <h4>Filtres</h4>
@@ -61,10 +54,10 @@
     </section>
 
     <main class="hotel">
-        <section class="hosting_container">
+        <section id="hosting" class="hosting_container">
                 <h2>Hébergements à Marseille</h2>
                 <div class="card_wrapper">
-                    <section class="hosting_card">
+                    <a href="#" class="hosting_card">
                 <article>
                 <img src="img/hotel/medium/hotel_1.jpg" alt="Chambre de la Cannebière">
                     <div>
@@ -79,8 +72,8 @@
                         </ul>
                     </div>
                 </article>
-                    </section>
-                    <section class="hosting_card">
+                    </a>
+                    <a href="#" class="hosting_card">
                 <article>
                 <img src="img/hotel/small/hotel_2.jpg" alt="Chambre du Port">
                     <div>
@@ -95,8 +88,8 @@
                         </ul>
                     </div>
                 </article>
-                    </section>
-                    <section class="hosting_card">
+                    </a>
+                    <a href="#" class="hosting_card">
                 <article>
                 <img src="img/hotel/small/hotel_3.jpg" alt="Chambre les Mouettes">
                     <div>
@@ -111,8 +104,8 @@
                         </ul>
                     </div>
                 </article>
-                    </section>
-                    <section class="hosting_card">
+                    </a>
+                    <a href="#" class="hosting_card">
                 <article>
                 <img src="img/hotel/small/hotel_4.jpg" alt="Chambre de la Mer">
                     <div>
@@ -127,8 +120,8 @@
                         </ul>
                     </div>
                 </article>
-                    </section>
-                    <section class="hosting_card">
+                    </a>
+                    <a href="#" class="hosting_card">
                 <article>
                 <img src="img/hotel/small/hotel_5.jpg" alt="Chambre le Panier">
                     <div>
@@ -143,8 +136,8 @@
                         </ul>
                     </div>
                 </article>
-                    </section>
-                    <section class="hosting_card">
+                    </a>
+                    <a href="#" class="hosting_card">
                 <article>
                 <img src="img/hotel/small/hotel_6.jpg" alt="Chambre chez Amina">
                     <div>
@@ -159,7 +152,7 @@
                         </ul>
                     </div>
                 </article>
-                    </section>
+                    </a>
                 </div>    
                 <h4>Afficher plus</h4>   
         </section>  
@@ -170,8 +163,8 @@
                     <h1>Les plus populaires</h1>
                     <span><i class="fas fa-star"></i></span>
                 </div>
-                <section class="popular_card">
-                    <article>
+                <article class="popular_card">
+                    <a href="#">
                     <img src="img/hotel/small/popular_1.jpg" alt="Chambre Le soleil du matin">
                         <div>
                             <h3>Hôtel Le soleil du <br> matin</h3>
@@ -184,10 +177,10 @@
                                 <li><i class="fas fa-star"></i></li>
                             </ul>
                         </div>
-                    </article>
-                </section>
-                <section class="popular_card">
-                    <article>
+                    </a>
+                </article>
+                <article class="popular_card">
+                    <a href="#">
                     <img src="img/hotel/small/popular_2.jpg" alt="Chambre au coeur de l'eau">
                         <div>
                             <h3>Au coeur de l'eau <br> Chambres d'hôtes</h3>
@@ -200,10 +193,10 @@
                                 <li><i class="fas fa-star"></i></li>
                             </ul>
                         </div>
-                    </article>
-                </section>
-                <section class="popular_card">
-                    <article>
+                    </a>
+                </article>
+                <article class="popular_card">
+                    <a href="#">
                     <img src="img/hotel/small/popular_3.jpg" alt="Chambre tout bleu et blanc">
                         <div>
                             <h3>Hôtel tout bleu et <br> Blanc</h3>
@@ -216,15 +209,17 @@
                                 <li><i class="fas fa-star"></i></li>
                             </ul>
                         </div>
-                    </article>
-                </section>
+                    </a>
+                </article>
             </div>
         </section> 
     </main> 
-    <div class="activity_wrapper">
+    <div id="activity" class="activity_wrapper">
     <section class="activity">
         <div class="act_1">
-            <img src="img/activites/2_large/act_1.jpg" alt="Vieux Port">
+            <a href="">
+                <img src="img/activites/2_large/act_1.jpg" alt="Vieux Port">
+            </a>
             <h4>Vieux Port</h4>
         </div>
         <div class="act_2">
@@ -259,6 +254,34 @@
         </div>
     </section>
     </div>
+
+    <footer class="footer">
+        <section>
+            <article>
+            <h4>A propos</h4>
+            <ul>
+                <li><a href="#">Fonctionnement du site</a></li>
+                <li><a href="#">Conditions générales de vente</a></li>
+                <li><a href="#">Données et confidentialité</a></li>
+            </ul>
+        </article>
+        <article>
+            <h4>Nos hébergements</h4>
+            <ul>
+                <li><a href="#">Charte qualité</a></li>
+                <li><a href="#">Soumettre votre hôtel</a></li>
+            </ul>
+        </article>
+        <article>
+            <h4>Assistance</h4>
+            <ul>
+                <li><a href="#">Centre d'aide</a></li>
+                <li><a href="#">Nous contacter</a></li>
+            </ul>
+        </article>  
+        </section>
+
+    </footer>
 </body>
 </html>
 
