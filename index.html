@@ -24,32 +24,34 @@
             <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
             <p>En plein centre ville ou pleine nature</p>
         </div>
-        <section class="form_city">
-                <div><i class="fas fa-star"></i></div>
+        <form class="form_city">
+                <div><i class="fas fa-map-marker-alt"></i></div>
                 <input type="text">
-                <button><span class="form_icone"><i class="fas fa-star"></i></span><span class="form_search">Rechercher</span></button>
-        </section>
+                <button><span class="form_icone"><i class="fas fa-search"></i></span><span class="form_search">Rechercher</span></button>
+        </form>
         <section class="filter">
-            <h4>Filtres</h4>
+        <div class="filter_wrapper">
+                 <h4>Filtres</h4>
             <div class="filter_wrap">
                 <div>
                     <span><i class="fas fa-money-bill-wave"></i></span>
                     <button>Economique</button>
                 </div>
                 <div>
-                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-child"></i></span>
                     <button>Familial</button>
                 </div>
                 <div>
-                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-heart"></i></span>
                     <button>Romantique</button>
                 </div>
                 <div>
-                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-dog"></i></span>
                     <button>Animaux autorisés</button>
                 </div>
             </div>
-            <div class="filter_info"><span><i class="fas fa-star"></i></span><p>Plus de 500 logements sont disponibles dans cette ville</p></div>
+        </div>
+            <div class="filter_info"><span><i class="fas fa-info"></i></span><p>Plus de 500 logements sont disponibles dans cette ville</p></div>
         </section>
     </section>
 
@@ -68,7 +70,7 @@
                             <li><i class="fas fa-star"></i></li>
                             <li><i class="fas fa-star"></i></li>
                             <li><i class="fas fa-star"></i></li>
-                            <li><i class="fas fa-star"></i></li>
+                            <li class="star_color"><i class="fas fa-star"></i></li>
                         </ul>
                     </div>
                 </article>
@@ -100,7 +102,7 @@
                             <li><i class="fas fa-star"></i></li>
                             <li><i class="fas fa-star"></i></li>
                             <li><i class="fas fa-star"></i></li>
-                            <li><i class="fas fa-star"></i></li>
+                            <li class="star_color"><i class="fas fa-star"></i></li>
                         </ul>
                     </div>
                 </article>
@@ -115,8 +117,8 @@
                             <li><i class="fas fa-star"></i></li>
                             <li><i class="fas fa-star"></i></li>
                             <li><i class="fas fa-star"></i></li>
-                            <li><i class="fas fa-star"></i></li>
-                            <li><i class="fas fa-star"></i></li>
+                            <li class="star_color"><i class="fas fa-star"></i></li>
+                            <li class="star_color"><i class="fas fa-star"></i></li>
                         </ul>
                     </div>
                 </article>
@@ -132,7 +134,7 @@
                             <li><i class="fas fa-star"></i></li>
                             <li><i class="fas fa-star"></i></li>
                             <li><i class="fas fa-star"></i></li>
-                            <li><i class="fas fa-star"></i></li>
+                            <li class="star_color"><i class="fas fa-star"></i></li>
                         </ul>
                     </div>
                 </article>
@@ -161,7 +163,7 @@
             <div class="popular_wrapper">
                 <div class="popular_header">
                     <h1>Les plus populaires</h1>
-                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-chart-line"></i></span>
                 </div>
                 <article class="popular_card">
                     <a href="#">
@@ -190,7 +192,7 @@
                                 <li><i class="fas fa-star"></i></li>
                                 <li><i class="fas fa-star"></i></li>
                                 <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
+                                <li class="star_color"><i class="fas fa-star"></i></li>
                             </ul>
                         </div>
                     </a>
@@ -206,7 +208,7 @@
                                 <li><i class="fas fa-star"></i></li>
                                 <li><i class="fas fa-star"></i></li>
                                 <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
+                                <li class="star_color"><i class="fas fa-star"></i></li>
                             </ul>
                         </div>
                     </a>
@@ -214,7 +216,8 @@
             </div>
         </section> 
     </main> 
-    <div id="activity" class="activity_wrapper">
+    <section id="activity" class="activity_wrapper">
+        <h2>Activités à Marseille</h2>
     <section class="activity">
         <div class="act_1">
             <a href="">
@@ -224,39 +227,39 @@
         </div>
         <div class="act_2">
             <a href="#">
-                <img src="img/activites/3_medium/activity_2.jpg" alt="Vieux Port">
+                <img src="img/activites/3_medium/activity_2.jpg" alt="Fort de Pomègues">
             </a>
-            <h4>Vieux Port</h4>
+            <h4>Fort de Pomègues</h4>
         </div>
         <div class="act_3">
             <a href="#">
-                <img src="img/activites/3_medium/activity_3.jpg" alt="Vieux Port">
+                <img src="img/activites/3_medium/activity_3.jpg" alt="Iles du Frioul">
             </a>
-            <h4>Vieux Port</h4>
+            <h4>Iles du Frioul</h4>
         </div>
         <div class="act_4">
             <a href="#">
-                <img src="img/activites/2_large/act_4.jpg" alt="Vieux Port">
+                <img src="img/activites/2_large/act_4.jpg" alt="Parc National des Calanques">
             </a>
-            <h4>Vieux Port</h4>
+            <h4>Parc National des Calanques</h4>
         </div>
         <div class="act_5">
             <a href="#">
-                <img src="img/activites/3_medium/activity_5.jpg" alt="Vieux Port">
+                <img src="img/activites/3_medium/activity_5.jpg" alt="Notre Dame de la Garde">
             </a>
-            <h4>Vieux Port</h4>
+            <h4>Notre-Dame-de-la-Garde</h4>
         </div>
         <div class="act_6">
             <a href="#">
-                <img src="img/activites/3_medium/activity_6.jpg" alt="Vieux Port">
+                <img src="img/activites/3_medium/activity_6.jpg" alt="Parc Longchamp">
             </a>
-            <h4>Vieux Port</h4>
+            <h4>Parc Longchamp</h4>
         </div>
     </section>
-    </div>
+</section>
 
     <footer class="footer">
-        <section>
+        <div>
             <article>
             <h4>A propos</h4>
             <ul>
@@ -279,8 +282,7 @@
                 <li><a href="#">Nous contacter</a></li>
             </ul>
         </article>  
-        </section>
-
+        </div>
     </footer>
 </body>
 </html>
